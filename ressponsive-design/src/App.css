@@ -172,7 +172,7 @@ h1 {
     width: 960px;
 
     justify-content: center;
-    margin-left: 270px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 45px;
 }
@@ -204,6 +204,38 @@ h1 {
     height: 1115px;
 }
 
+.portfolio-cards {
+    width: 1115px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.single-cards {
+    background-color: #ffffff;
+    height: 370px;
+}
+
+img {
+    height: 250px;
+    width: 360px;
+}
+
+.port-title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.port-desc {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 @media (max-width: 990px) {
     .nav-bar {
         display: none;
@@ -219,17 +251,19 @@ h1 {
     h1 {
         font-size: 20px;
     }
-}
-@media (min-width: 990px) {
-    .mobile-nav {
-        display: none;
+    .portfolio-cards {
+        width: 1115px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin-top: 50px;
     }
-}
-
-@media (max-width: 768px) {
-    /* .commerce-text {
-        font-size: 78px;
-    } */
+    img {
+        width: 335px;
+    }
     .services {
         background-color: #ffffff;
         height: 100%;
@@ -239,6 +273,39 @@ h1 {
     .services-container {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
+
+        justify-items: center;
+        gap: 20px;
+        /* width: 350px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .commerce-lorem {
+        width: 450px;
+    }
+    .web-container {
+        margin-right: 50px;
+    }
+}
+@media (min-width: 990px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/* @media (max-width: 768px) { */
+/* .commerce-text {
+        font-size: 78px;
+    } */
+/* .services {
+        background-color: #ffffff;
+        height: 100%;
+        margin-top: -10px;
+    } */
+
+/* .services-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 20px;
         width: 350px;
         margin-left: 180px;
@@ -246,4 +313,4 @@ h1 {
     .web-container {
         margin-right: 50px;
     }
-}
+} */
