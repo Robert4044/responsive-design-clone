@@ -11,6 +11,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    /* font-weight: normal; */
+}
+
 .header {
     width: 100vw;
     background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
@@ -34,12 +49,13 @@
 h1 {
     font-family: 'Kaushan Script', cursive;
     color: #fec810;
+    margin-top: 10px;
 }
 
 .nav-bar {
     display: flex;
     color: #fff;
-    margin-top: 35px;
+    margin-top: 25px;
     font-size: 18px;
     font-weight: bold;
 
@@ -125,6 +141,69 @@ h1 {
     opacity: 0;
 }
 
+.services {
+    background-color: #ffffff;
+    height: 665px;
+    margin-top: -10px;
+}
+
+.services-title {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services-text {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.cart {
+    background-color: #fed136;
+    padding: 25px;
+    border-radius: 50%;
+}
+.services-container {
+    display: flex;
+    width: 960px;
+
+    justify-content: center;
+    margin-left: 270px;
+    margin-right: auto;
+    margin-top: 45px;
+}
+.ecommerce-container {
+    text-align: center;
+    margin-right: 50px;
+}
+.cart {
+    margin-bottom: 25px;
+}
+.commerce-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.responsive-container {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.web-container {
+    text-align: center;
+}
+
+.section-portfolio {
+    background-color: #f8f9fa;
+    margin-top: -10px;
+    height: 1115px;
+}
+
 @media (max-width: 990px) {
     .nav-bar {
         display: none;
@@ -144,5 +223,27 @@ h1 {
 @media (min-width: 990px) {
     .mobile-nav {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .commerce-text {
+        font-size: 78px;
+    } */
+    .services {
+        background-color: #ffffff;
+        height: 100%;
+        margin-top: -10px;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        width: 350px;
+        margin-left: 180px;
+    }
+    .web-container {
+        margin-right: 50px;
     }
 }

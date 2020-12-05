@@ -43,6 +43,48 @@ function App() {
                     <button className='btn-section'>TELL ME MORE</button>
                 </section>
             </header>
+            <section className='services'>
+                <h1 className='services-title'>Services</h1>
+                <p className='services-text'>
+                    Lorem ipsum, dolor sit amet consectetur.
+                </p>
+                <div className='services-container'>
+                    <div className='ecommerce-container'>
+                        <i className='fas fa-shopping-cart cart fa-4x'></i>
+                        <p className='commerce-text'>E-Commerce</p>
+                        <p className='commerce-lorem'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.
+                        </p>
+                    </div>
+                    <div className='responsive-container'>
+                        <i class='fas fa-desktop cart fa-4x'></i>
+                        <p className='commerce-text'>Responsive Design</p>
+                        <p className='commerce-lorem'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.
+                        </p>
+                    </div>
+                    <div className='web-container'>
+                        <i class='fas fa-lock cart fa-4x'></i>
+                        <p className='commerce-text'>Web Security</p>
+                        <p className='commerce-lorem'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className='section-portfolio'>
+                <h1 className='services-title'>Portfolio</h1>
+                <p className='services-text'>
+                    Lorem ipsum, dolor sit amet consectetur.
+                </p>
+                <div className='portfolio-cards'></div>
+            </section>
         </div>
     )
 }
